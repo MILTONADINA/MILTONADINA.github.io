@@ -569,10 +569,10 @@ const projectContent: Omit<Project, 'highlights'>[] = [
   {
     slug: 'private-security-contributions',
     name: 'Private Youth-Sports Platform',
-    stage: 'Authored security submissions; no merged PRs in the reviewed record',
+    stage: 'Security patches and privacy workflows submitted through pull requests',
     overview: {
       approach: 'Server handlers establish identity, role and record ownership before sensitive writes. Related proposals connect webhook verification and processed-event tracking, and route deletion/retention requests through guarded operations.',
-      evidence: 'The October 1, 2026 private review records 30 authored PRs across three repositories: 28 open and two closed without merge. The work includes code and operational documentation, not a claim of deployed remediation or handling a real breach.',
+      evidence: 'I submitted 30 pull requests across three private repositories, pairing security patches with privacy documentation, incident-response runbooks and implementation notes. The code and review discussions remain private.',
     },
     isPrivate: true,
     workType: 'Security engineering contributions',
@@ -581,9 +581,9 @@ const projectContent: Omit<Project, 'highlights'>[] = [
     blurb:
       'Security engineering contributions to a youth-sports platform and related applications, focused on who can access records and how sensitive workflows are handled.',
     stack: ['TypeScript', 'Convex', 'SvelteKit', 'Drizzle', 'PostgreSQL'],
-    metrics: [{ label: 'Repositories with authored submissions', value: '3' }],
+    metrics: [{ label: 'Private repositories', value: '3' }],
     summaryPoints: [
-      'Authored authorization, record-ownership, session and webhook-hardening changes.',
+      'Built and submitted authorization, record-ownership, session and webhook-hardening changes.',
       'Submitted parent-requested data-deletion and retention workflows with supporting documentation.',
       'Prepared incident-response and security-review material alongside the code proposals.',
     ],
@@ -605,9 +605,9 @@ const projectContent: Omit<Project, 'highlights'>[] = [
         ],
       },
       {
-        title: 'Submission status',
+        title: 'Pull requests and confidentiality',
         paragraphs: [
-          'The security patches were submitted through pull requests and remain unmerged. The repositories are private, so this case describes my contribution at a high level without publishing application code or private issue details.',
+          'I submitted 30 pull requests across three private repositories. As of October 1, 2026, 28 remained open and two had been closed without merging. I keep the application code and private issue discussions confidential while sharing the engineering decisions behind my contributions.',
         ],
       },
     ],
@@ -623,7 +623,7 @@ const projectContent: Omit<Project, 'highlights'>[] = [
     stage: 'One upstream PR merged; four documentation proposals open',
     overview: {
       approach: 'The accepted Windows quickstart explains PowerShell execution-policy handling and the WSL setup route. Separate integration documents explain configuration and use, making technical setup steps understandable to contributors.',
-      evidence: 'PR #5668 merged upstream on March 15, 2026. Four documentation proposals covering 18 integrations remain open as of October 1, 2026. These are documentation contributions; they do not imply authorship of the integration engines.',
+      evidence: 'My Windows quickstart contribution, PR #5668, merged upstream on March 15, 2026. Four documentation proposals covering 18 integrations remain open as of October 1, 2026. My contributions cover Windows setup and integration documentation.',
     },
     isPrivate: false,
     publicLabel: 'Open-source contributor',
@@ -652,7 +652,7 @@ const projectContent: Omit<Project, 'highlights'>[] = [
       {
         title: 'Integration documentation',
         paragraphs: [
-          'Four open documentation PRs cover 18 integrations, including Kafka, Redis, MongoDB, Jira, HubSpot, GitLab, Salesforce, Twilio and Supabase. The work describes configuration and tool use rather than claiming authorship of the integration engines.',
+          'I submitted four documentation PRs covering configuration and tool use for 18 integrations, including Kafka, Redis, MongoDB, Jira, HubSpot, GitLab, Salesforce, Twilio and Supabase.',
           'The open submissions are #6708, #6709, #6716 and #6717. I also submitted code proposals around expression evaluation, execution limits and token refresh; those proposals closed without merge.',
         ],
       },
@@ -669,10 +669,10 @@ const projectContent: Omit<Project, 'highlights'>[] = [
   {
     slug: 'dr-who',
     name: 'Doctor Who Knowledge API',
-    stage: 'Three-person academic project; personal contribution identified',
+    stage: 'Three-person academic project',
     overview: {
       approach: 'My frontend and OpenAI integration use supplied schema relationships and sample records to answer questions. The endpoint returns text rather than executing generated SQL. JWT mutation protection and PostgreSQL migration work complement the interface.',
-      evidence: 'Three Jest/Supertest authentication-route tests passed on October 1, 2026 with database calls mocked. They cover missing-token rejection, valid-token body validation and public GET access. The 16-model schema is team scope, not sole authorship.',
+      evidence: 'Three Jest/Supertest authentication-route tests passed on October 1, 2026 with database calls mocked. They cover missing-token rejection, valid-token body validation and public GET access. Our three-person team developed the 16-model schema; my contributions include the frontend, OpenAI integration and authentication work.',
     },
     isPrivate: false,
     publicLabel: 'Public coursework',
@@ -695,7 +695,7 @@ const projectContent: Omit<Project, 'highlights'>[] = [
         title: 'Team scope and my contribution',
         paragraphs: [
           'This three-person course project models doctors, episodes, companions, enemies and their relationships. The team schema contains 16 Sequelize models, with REST and relational-query routes for reading and maintaining the data.',
-          'My documented contributions include the responsive frontend, OpenAI integration, deployment configuration and testing. Later commits add authentication middleware, route tests and PostgreSQL migration work. Teammates contributed the original model associations and API/service queries.',
+          'My work covered the responsive frontend, OpenAI integration, deployment configuration and testing. I also added authentication middleware, route tests and PostgreSQL migration work. My teammates contributed the original model associations and API/service queries.',
         ],
       },
       {
@@ -771,17 +771,17 @@ const projectContent: Omit<Project, 'highlights'>[] = [
   },
   {
     slug: 'application-security-lab',
-    name: 'Applied AppSec Lab',
-    stage: 'Documented training assessment and proposed mitigations',
+    name: 'Security Assessments & Threat Modeling',
+    stage: 'Threat model, scan analysis and remediation recommendations',
     overview: {
-      approach: 'The STRIDE model distinguishes identity from tenant/resource authorization and records residual risks. In the separate Juice Shop exercise, I traced CSP, cross-origin and browser-isolation alerts to their affected behavior, risk and proposed mitigation.',
-      evidence: 'The May 30, 2026 local passive baseline crawled 158 URLs and reported ten alert types: two medium, five low and three informational. Original scan outputs support the findings. This was a training target, with no claim of deployed fixes or a clean rescan.',
+      approach: 'I mapped authentication, tenant access and database trust boundaries in a STRIDE model. In a separate local Juice Shop exercise, I investigated CSP, cross-origin and browser-isolation alerts and documented remediation recommendations.',
+      evidence: 'My May 30, 2026 OWASP ZAP assessment of local Juice Shop crawled 158 URLs and reported ten alert types: two medium, five low and three informational. I published the original scan outputs alongside my finding analysis and proposed mitigations.',
     },
     isPrivate: false,
     workType: 'Independent security practice',
     domain: 'Threat modeling, passive assessment and finding triage',
     role: 'Security Analyst',
-    blurb: 'A documented application-security exercise connecting a STRIDE threat model with an OWASP ZAP assessment of a local, intentionally vulnerable training application.',
+    blurb: 'Application-security work combining a STRIDE threat model for a school platform with a separate OWASP ZAP assessment of a local, intentionally vulnerable training application. The assessment and design notes are published in my project showcase.',
     stack: ['OWASP ZAP', 'STRIDE', 'Docker', 'CSP', 'CORS', 'Semgrep', 'gitleaks'],
     metrics: [{ label: 'Dated passive scan', value: 'May 30, 2026' }],
     summaryPoints: [
@@ -797,17 +797,17 @@ const projectContent: Omit<Project, 'highlights'>[] = [
         ],
       },
       {
-        title: 'A bounded assessment and reproducible evidence',
+        title: 'Assessing a local training application',
         paragraphs: [
           'For the scanning exercise, I used OWASP ZAP against OWASP Juice Shop in local Docker. The May 30, 2026 baseline traversed 158 URLs and reported ten alert types: two medium, five low and three informational. This was a passive baseline and spider run against a training target.',
-          'The report traces findings back to the preserved JSON, HTML and Markdown outputs. The finding assessment covers missing content-security policy, cross-origin configuration and browser-isolation headers, and explains where endpoint-specific investigation is still needed.',
+          'I linked each finding to the original JSON, HTML and Markdown scan outputs. My analysis covers missing content-security policy, cross-origin configuration and browser-isolation headers, with endpoint-specific follow-up where the scan alone cannot establish exploitability.',
         ],
       },
       {
-        title: 'Turning alerts into a technical explanation',
+        title: 'Prioritizing findings and recommending fixes',
         paragraphs: [
-          'I documented the affected behavior, risk and a proposed mitigation for each finding group. The exercise demonstrates investigation and communication of security findings; the record does not claim deployed remediation or a clean rescan.',
-          'The evidence index describes static analysis, secret scanning, dependency auditing and SBOM generation as separate engineering controls. Client workflow files remain private, and their configuration is separate from the result of this lab.',
+          'I documented the affected behavior, risk and a proposed mitigation for each finding group. My deliverables were the finding assessment and remediation recommendations; deployment and retesting were outside this exercise.',
+          'My accompanying security notes explain how I use static analysis, secret scanning, dependency auditing and SBOM generation. Client CI configurations remain private; these design notes are separate from the Juice Shop scan results.',
         ],
       },
     ],
@@ -815,7 +815,7 @@ const projectContent: Omit<Project, 'highlights'>[] = [
     accentDot: 'bg-rose-400',
     accentFrom: 'from-rose-500/10',
     links: [
-      { label: 'Security evidence index', href: 'https://github.com/MILTONADINA/Private-Projects-Portfolio-Showcase/tree/main/BrightPath/security' },
+      { label: 'Security assessments in my showcase', href: 'https://github.com/MILTONADINA/Private-Projects-Portfolio-Showcase/tree/main/BrightPath/security' },
       { label: 'Assessment and original scan outputs', href: 'https://github.com/MILTONADINA/Private-Projects-Portfolio-Showcase/blob/main/BrightPath/security/scans/OWASP-JuiceShop-ZAP-assessment.md' },
       { label: 'STRIDE threat model and data-flow diagram', href: 'https://github.com/MILTONADINA/Private-Projects-Portfolio-Showcase/blob/main/BrightPath/security/threat-models/BrightPath-STRIDE-threat-model.md' },
     ],
@@ -845,8 +845,8 @@ export const focusAreas = [
     summary: 'Authorization reviews, privacy controls, threat modeling and documented security-finding analysis.',
     examples: [
       { label: 'Flourish: encryption and audit privileges', href: '/work/flourish/', description: 'Implemented versioned field encryption, controlled report access and database privileges that let the application append audit records without changing prior entries.' },
-      { label: 'Private platform: security submissions', href: '/work/private-security-contributions/', description: 'Authored authorization, ownership, session and privacy-workflow patches across three private repositories. The submissions remain unmerged.' },
-      { label: 'AppSec lab: threat modeling and assessment', href: '/work/application-security-lab/', description: 'Documented STRIDE trust boundaries and triaged a passive ZAP scan of local Juice Shop, separating findings and proposed mitigations from deployed fixes.' },
+      { label: 'Private platform: security contributions', href: '/work/private-security-contributions/', description: 'Built and submitted authorization, ownership, session and privacy-workflow patches across three private repositories, with supporting implementation and response documentation.' },
+      { label: 'Security assessments and threat modeling', href: '/work/application-security-lab/', description: 'Mapped STRIDE trust boundaries and analyzed a passive OWASP ZAP scan of local Juice Shop, with published findings and remediation recommendations.' },
     ],
   },
   {
