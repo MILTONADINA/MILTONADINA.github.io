@@ -5,9 +5,9 @@ const SITE = 'https://miltonadina.github.io';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE),
-  title: 'Milton Adina Shisia — Software Engineer',
+  title: 'Milton Adina Shisia | Software Engineer',
   description:
-    'Full-stack & security-focused software engineer. Multi-tenant SaaS, compliance-engineered health platforms, cross-platform mobile, and AI systems — with real, verifiable test evidence.',
+    'Software engineering and application security by Milton Adina Shisia. Explore web and mobile projects, technical decisions, open-source contributions, and his résumé.',
   keywords: [
     'Milton Adina Shisia',
     'software engineer',
@@ -28,20 +28,20 @@ export const metadata: Metadata = {
   creator: 'Milton Adina Shisia',
   alternates: { canonical: SITE },
   openGraph: {
-    title: 'Milton Adina Shisia — Software Engineer',
+    title: 'Milton Adina Shisia | Software Engineer',
     description:
-      'Secure, test-driven full-stack & mobile systems. 6 production systems, 2,200+ real passing tests.',
+      'Web and mobile projects, application security, open-source contributions, and the engineering decisions behind the work.',
     url: SITE,
     siteName: 'Milton Adina Shisia',
     type: 'website',
-    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Milton Adina Shisia — Software Engineer' }],
+    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Milton Adina Shisia, software engineering and application security' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Milton Adina Shisia — Software Engineer',
-    description:
-      'Secure, test-driven full-stack & mobile systems. 6 production systems, 2,200+ real passing tests.',
     images: ['/og.png'],
+    title: 'Milton Adina Shisia | Software Engineer',
+    description:
+      'Web and mobile projects, application security, open-source contributions, and the engineering decisions behind the work.',
   },
   robots: { index: true, follow: true },
 };
